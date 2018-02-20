@@ -1,0 +1,162 @@
+$colorTitleCaption: #4462c5;
+$titleColor:#1b1f6b;
+$colorAdvantageDesc: #28333d;
+$bgAdvantage: #fafafa;
+$bgAdvantageItem: #fff;
+$sertificatevgbg: #000;
+
+.sertific-module{
+	max-width: 1050px;
+}
+
+.sertificate-module-1 {
+	margin-top: 60px;
+
+
+	
+
+	.sertificate-content {
+		position: relative;
+
+		[class*="route-"] {
+		position: absolute;
+		z-index: 10;
+		top: 45%;
+	}
+	.owl-dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		@include radius;
+		border: 2px solid #3cbfa4;
+		margin-right: 5px;
+		margin-top: 15px;
+	}
+
+	.owl-dot.active {
+		background-color: #28333d;
+		border-color: #28333d;
+	}
+
+	.route-left {
+		left: 0px;
+		cursor: pointer;
+		height: 20px;
+	}
+
+	.route-right {
+		right: 0px;
+		cursor: pointer;
+		height: 20px;
+	}
+	}
+
+	.sertificate-title {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		text-align: center;
+		font-family: $FiraSansSemibold;
+		font-size: 30px;
+		color: $titleColor;
+
+		.caption {
+			color: $colorTitleCaption;
+		}
+
+	}
+
+	.sertificate-content {
+		margin-top: 65px;
+	}
+
+	.sertificate-content-wrapper {
+		text-align: justify;
+		overflow: hidden;
+	}
+
+	.sertificate-content-wrapper:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.advantage {
+		// display: inline-block;
+		vertical-align: top;
+		background-color: $bgAdvantageItem;
+		width: 270px;
+		margin: auto;
+	}	
+
+	.advantage-wrapper {
+		min-height: inherit;
+	}
+
+	.advantage-bg {
+		.bg-img	{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}	
+	}
+
+	.success-1 {
+		height: 43px;
+		width: 43px;
+	}
+
+	.advantage-desc {
+		font-family: $FiraSansSemibold;
+		color: $colorTitleCaption;
+		text-align: center;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		height: 80px;
+		width: 100%;
+	}
+	.advantage-but{
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.advantage-but-two{
+		text-align: center;
+		background: $bgAdvantage;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.sertificate-module-1 {
+		[class*="route-"] {
+			display: block;
+		}
+		.sertificate-title {
+			font-size: 24px;
+			line-height: 30px;
+		}
+
+		.sertificate-content-wrapper {
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.advantage {
+			width: 100%;
+		}
+	}
+		.route-left {
+			left: -10px !important;
+			height: 20px;
+		}
+
+		.route-right {
+			right: -10px !important;
+			height: 20px;
+		}
+}

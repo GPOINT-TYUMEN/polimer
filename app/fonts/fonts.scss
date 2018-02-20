@@ -1,0 +1,21 @@
+$OpenSans: 'OpenSans';
+$OpenSansItalic: 'OpenSans-Italic';
+$OpenSansBold: 'OpenSans-Bold';
+$OpenSansSemibold: 'OpenSans-Semibold';
+
+$FiraSans: 'FiraSans-Medium';
+$FiraSansRegular: 'FiraSans-Regular';
+$FiraSansItalic: 'FiraSans-Italic';
+$FiraSansBold: 'FiraSans-Bold';
+$FiraSansSemibold: 'FiraSans-SemiBold';
+
+@include fonts($OpenSans, 'open-sans/');
+@include fonts($OpenSansItalic, 'open-sans/');
+@include fonts($OpenSansBold, 'open-sans/');
+@include fonts($OpenSansSemibold, 'open-sans/');
+
+@include fonts($FiraSans, 'fira-sans/');
+@include fonts($FiraSansRegular, 'fira-sans/');
+@include fonts($FiraSansItalic, 'fira-sans/');
+@include fonts($FiraSansBold, 'fira-sans/');
+@include fonts($FiraSansSemibold, 'fira-sans/');

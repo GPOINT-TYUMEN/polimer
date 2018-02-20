@@ -1,0 +1,164 @@
+$colorTitleCaption: #1b1f6b;
+$colorAdvantageDesc: #28333d;
+$bgAdvantage: #fafafa;
+$bgAdvantageItem: #fff;
+$advantagesvgbg: #000;
+.catalog-module {
+	margin-top: 60px;
+	background: $bgAdvantage;
+
+
+	[class*="route-"] {
+		position: absolute;
+		z-index: 10;
+		cursor:pointer;
+		top: 35%;
+	}
+	.owl-dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		@include radius;
+		border: 2px solid $colorTitleCaption;
+		margin-right: 5px;
+		margin-top: 15px;
+	}
+
+	.owl-dot.active {
+		background-color: #28333d;
+		border-color: #28333d;
+	}
+
+	.route-left {
+		left: 0;
+		height: 20px;
+	}
+
+	.route-right {
+		right: 0;
+		height: 20px;
+	}
+
+	.advantages-content {
+		position: relative;
+	}
+
+	.advantages-title {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		margin-top: 50px;
+		text-align: center;
+		font-family: $FiraSansSemibold;
+		font-size: 30px;
+		color: $colorTitleCaption;
+		
+		.caption {
+			color: $colorTitleCaption;
+		}
+
+	}
+
+	.advantages-content {
+		margin-top: 65px;
+	}
+
+	.advantages-content-wrapper {
+		text-align: justify;
+		overflow: hidden;
+	}
+
+	.advantages-content-wrapper:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.advantage {
+		// display: inline-block;
+		vertical-align: top;
+		margin: auto;
+		background-color: $bgAdvantageItem;
+		min-height: 125px;
+		width: 305px;
+	}	
+
+	.advantage-wrapper {
+		min-height: inherit;
+	}
+
+	.advantage-bg {
+		.bg-img	{
+			width: 100%;
+			height: 180px;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}
+		}	
+	}
+
+	.success-1 {
+		height: 43px;
+		width: 43px;
+	}
+
+	.advantage-desc {
+		font-family: $FiraSans;
+		color: $colorTitleCaption;
+		text-align: center;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 18px;
+		height: 80px;
+		width: 100%;
+	}
+	.advantage-but{
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.advantage-but-two{
+		text-align: center;
+		background: $bgAdvantage;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+}
+
+
+
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	.catalog-module {
+		margin-top: 20px;
+		[class*="route-"] {
+			display: block;
+		}
+		.advantages-title {
+			font-size: 24px;
+			margin-top: 20px;
+			line-height: 30px;
+		}
+
+		.advantages-content-wrapper {
+			text-align: center;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.advantage {
+			width: 100%;
+		}
+
+		.route-left {
+			left: -10px;
+			height: 20px;
+		}
+
+		.route-right {
+			right: -10px;
+			height: 20px;
+		}
+	}
+}

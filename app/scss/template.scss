@@ -1,0 +1,127 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+//> OVERALL
+$bgBtn1: #1b1f6b;
+$colorBtn1: #FFF;
+$colorBtn2: #000;
+[class*="btn_"] {
+	padding: 10px 0;
+	border-radius: 35px;
+	outline: 0;
+	cursor: pointer;
+	display: inline-block;
+    text-align: center;
+}
+
+.btn-cont {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  text-align: center;
+}
+
+.btn_1 {
+	width: 158px;
+	background-color: $bgBtn1;
+	color: $colorBtn1;
+	border: 1px solid $bgBtn1;	
+	font-family: $FiraSansRegular;
+	font-size: 16px;
+} 
+.btn_1:hover {
+	transition: 0.4s;
+	background-color: transparent;
+	color: $bgBtn1;
+}
+
+.btn_2 {
+	width: 190px;
+	background-color: $colorBtn1;
+	color: $bgBtn1;
+	border: 1px solid $colorBtn1;	
+	font-family: $FiraSansRegular;
+	font-size: 16px;
+	text-transform: uppercase;
+} 
+.btn_2:hover {
+	transition: 0.4s;
+	color: $colorBtn1;
+	background-color: transparent;
+}
+
+
+.btn_3 {
+  width: 190px;
+  background-color: $bgBtn1;
+  color: $colorBtn1;
+  border: 1px solid $bgBtn1;  
+  font-family: $FiraSansRegular;
+  text-transform: uppercase;
+  font-size: 16px;
+} 
+.btn_3:hover {
+  transition: 0.4s;
+  background-color: transparent;
+  color: $bgBtn1;
+}
+
+.btn_4 {
+  width: 190px;
+  background-color: none;
+  color: $colorBtn2;
+  border: 1px solid $bgBtn1;  
+  font-family: $FiraSansRegular;
+  font-size: 16px;
+} 
+.btn_4:hover {
+  transition: 0.4s;
+  background-color: $bgBtn1;
+  color: $colorBtn1;
+}
+
+.btn_5 {
+	width: 190px;
+	background-color: $bgBtn1;
+	color: $colorBtn1;
+	border: 1px solid $colorBtn1;	
+	font-family: $FiraSansRegular;
+	font-size: 16px;
+	text-transform: uppercase;
+} 
+.btn_5:hover {
+	transition: 0.4s;
+	color: $bgBtn1;
+	background-color: $colorBtn1;
+	border: 1px solid $bgBtn1;
+}
+
+[class*="route-"] {
+	position: absolute;
+}
+
+
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+@import "../templates/site/widgets/modal/scss/widget.scss";
+@import "../templates/site/widgets/photoswipe/scss/widget.scss";
+//< OVERALL  
+
+@import "../templates/site/modules/header-nav/scss/module.scss";
+@import "../templates/site/modules/about-company/scss/module.scss";
+@import "../templates/site/modules/bunner-slider-1/scss/module.scss";
+@import "../templates/site/modules/catalog/scss/module.scss";
+@import "../templates/site/modules/job-us-section/scss/module.scss";
+@import "../templates/site/modules/numbers-items-1/scss/module.scss";
+@import "../templates/site/modules/bunner-slider-2/scss/module.scss";
+@import "../templates/site/modules/oplata-section/scss/module.scss";
+@import "../templates/site/modules/dostavka-section/scss/module.scss";
+@import "../templates/site/modules/sertificate/scss/module.scss";
+@import "../templates/site/modules/module-contacts-1/scss/module.scss";
+@import "../templates/site/modules/company-info/scss/module.scss";
+@import "../templates/site/modules/catalog-2/scss/module.scss";
+@import "../templates/site/modules/catalog-3-page-3/scss/module.scss";
+@import "../templates/site/modules/advantages-module-2/scss/module.scss";
+
+@import "../templates/site/modules/header-bunner/scss/module.scss";
+@import "../templates/site/modules/present/scss/module.scss";
+@import "../templates/site/modules/primenenie/scss/module.scss";
+;
